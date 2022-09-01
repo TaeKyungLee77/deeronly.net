@@ -20,8 +20,8 @@ btnPlus.addEventListener('click', function(){
     amountCount.value ++;
     totalPrice.innerHTML = Math.floor(caver.utils.fromPeb(mintPrice, "KLAY")) * amountCount.value + " KLAY";
     btnMinus.classList.remove("untouchable");
-    if(amountCount.value >= 5){
-        amountCount.value = 5;
+    if(amountCount.value >= 1){
+        amountCount.value = 1;
         totalPrice.innerHTML = Math.floor(caver.utils.fromPeb(mintPrice, "KLAY")) * amountCount.value + " KLAY";
         btnPlus.classList.add("untouchable");
     }
